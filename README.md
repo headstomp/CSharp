@@ -58,3 +58,33 @@ Users:     One at a time on one application<br>
 - Interfaces
 - Random Ordering
 
+# Data Design
+
+<b>Mapping the Data<b>
+Team<br>
+   - TeamMembers (List<Person>)
+   - TeamName (string)
+Person<br>
+   - FirstName (string)
+   - LastName (string)
+   - EmailAdress (string)
+Tournament<br>
+   - TournamentName (string)
+   - EntryFee (decimal)
+   - EnteredTeams (List<Team>)
+   - Prizes (List<Prize>)
+   - Rounds (List<List<Matchup>>)
+Prize<br>
+   - PlaceNumber (int)
+   - PlaceName (string)
+   - PrizeAmount (decimal)
+   - PrizePercentage (double)
+Matchup<br>
+   - Entries (List<MatchupEntry>)
+   - Winner (Team)
+   - MatchupRound (int)
+MatchupEntry<br>
+   - TeamCompeting (Team)
+   - Score (double)
+   - ParentMatchup (Matchup)
+   

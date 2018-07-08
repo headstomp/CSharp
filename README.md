@@ -92,3 +92,9 @@ MatchupEntry<br>
    - Score (double)
    - ParentMatchup (Matchup)
    
+# UI Design
+![GitHub Logo](/images/Dashboard.png){:height="200px" width="200px"}
+![GitHub Logo](/images/Tournamnet.png){:height="200px" width="200px"}
+![GitHub Logo](/images/CreateTournament.png){:height="200px" width="200px"}
+![GitHub Logo](/images/CreateTeam.png){:height="200px" width="200px"}
+![GitHub Logo](/images/CreatePrize.png){:height="200px" width="200px"}

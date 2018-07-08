@@ -93,8 +93,8 @@ MatchupEntry<br>
    - ParentMatchup (Matchup)
    
 # UI Design
-![GitHub Logo](/images/Dashboard.png | width=100)
-![GitHub Logo](/images/Tournamnet.png | width=100)
-![GitHub Logo](/images/CreateTournament.png | width=100)
-![GitHub Logo](/images/CreateTeam.png | width=100)
-![GitHub Logo](/images/CreatePrize.png | width=100)
+![GitHub Logo](/images/Dashboard.png =250x)
+![GitHub Logo](/images/Tournamnet.png =250x)
+![GitHub Logo](/images/CreateTournament.png =250x)
+![GitHub Logo](/images/CreateTeam.png =250x)
+![GitHub Logo](/images/CreatePrize.png =250x)

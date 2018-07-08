@@ -97,3 +97,38 @@
 ![GitHub Logo](/images/CreateTournament.png)
 ![GitHub Logo](/images/CreateTeam.png)
 ![GitHub Logo](/images/CreatePrize.png)
+
+## Logic Planning
+
+**Create Tournamnet Form**
+- **create new team:** open new team form, close out form and return, show data in teams listbox (method, interface)
+- **add team:** find team in dropdown and put in list box/remove from dropdown and refresh
+- **create prize:** open new prize form, close out form and return, show data in prize listbox (method, interface)
+- **delete selected:** delete from listbox and put back in dropdown 
+- **create tournamnet:** validate information, create schedule, figure out how many teams, how many byes, randomize round order
+
+**Create Team Form**
+- **add member:** find member in dropdown and put in list box/remove from dropdown and refresh
+- **create member:** take member info create a member and add it to listbox, clear out member fields
+- **delete member:** delete from team list add to dropdown
+- **create team:** validate team then create and send back to caller and close from
+
+**Create Prize Form**
+- **create prize:** validate prize then create and send back to caller and close from
+
+**Tourament Dashboard**
+- **load tournamnet:** load selected tournament viwer for selected tourny
+- **create tournamnet:** open create tournamnet form (add to dropdown after new tournamnet is created)
+
+**Tourament Viewer**
+tournamnet name gets updated
+- **Round:** figure out how many rounds are in a rounds object and populate dropdown
+- **Unplayed Only:** filter dropdown
+- **Scores:** determine matchup, update team names, if the have score populate
+- **Score Button:** change selected matchups scores, update match to complete and determine who won (triggers: if last matchup in round start new round, email results and next schedule, if end of tourny assign prizes and send final email) **can we update scores on finished games** yes, only during current round. Lock if not current round
+
+**Other** Figure out when coding
+- Data access, two different data sources
+- Emails, what triggers them
+- What triggers knowing whop plays the next matchup
+

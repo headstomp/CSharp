@@ -1,6 +1,6 @@
 # Tournament Tracker
 
-# Requirments
+## Requirments
 
 1. Track games played and their outcome (who won).<br>
 2. Multiple compentitors play in topurnament.<br>
@@ -9,7 +9,7 @@
 5. A single loss eliminates a player.<br>
 6. The last player standing is the winner.<br>
 
-# Questions
+## Questions
 
 1. How mnay players will the touranment handle? Is it variable.<br>
    - variable number of players 
@@ -43,13 +43,13 @@
     - The tracker should be able to handle the addition of other members. All members should be treated as equals in that they all get touranment emails. Teams should also be able to name their team.
     
     
-# Big Picture Design
+## Big Picture Design
 
-Structure: Windows Forms application and Class Library<br>
-Data:      SQL and/or Text File<br>
-Users:     One at a time on one application<br>
+######Structure: Windows Forms application and Class Library<br>
+######Data:      SQL and/or Text File<br>
+######Users:     One at a time on one application<br>
 
-# Key Concepts
+###### Key Concepts
 
 - Email
 - SQL
@@ -58,43 +58,43 @@ Users:     One at a time on one application<br>
 - Interfaces
 - Random Ordering
 
-# Data Design
+## Data Design
 
-Team<br>
+######Team<br>
    - TeamMembers (List<Person>)
    - TeamName (string)
    
-Person<br>
+######Person<br>
    - FirstName (string)
    - LastName (string)
    - EmailAdress (string)
    
-Tournament<br>
+######Tournament<br>
    - TournamentName (string)
    - EntryFee (decimal)
    - EnteredTeams (List<Team>)
    - Prizes (List<Prize>)
    - Rounds (List<List<Matchup>>)
    
-Prize<br>
+######Prize<br>
    - PlaceNumber (int)
    - PlaceName (string)
    - PrizeAmount (decimal)
    - PrizePercentage (double)
    
-Matchup<br>
+######Matchup<br>
    - Entries (List<MatchupEntry>)
    - Winner (Team)
    - MatchupRound (int)
    
-MatchupEntry<br>
+######MatchupEntry<br>
    - TeamCompeting (Team)
    - Score (double)
    - ParentMatchup (Matchup)
    
-# UI Design
-![GitHub Logo](/images/Dashboard.png =250x)
-![GitHub Logo](/images/Tournamnet.png =250x)
-![GitHub Logo](/images/CreateTournament.png =250x)
-![GitHub Logo](/images/CreateTeam.png =250x)
-![GitHub Logo](/images/CreatePrize.png =250x)
+## UI Design
+![GitHub Logo](/images/Dashboard.png)
+![GitHub Logo](/images/Tournamnet.png)
+![GitHub Logo](/images/CreateTournament.png)
+![GitHub Logo](/images/CreateTeam.png)
+![GitHub Logo](/images/CreatePrize.png)

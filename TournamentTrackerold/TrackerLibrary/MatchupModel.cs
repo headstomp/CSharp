@@ -6,13 +6,24 @@ using System.Threading.Tasks;
 
 namespace TrackerLibrary
 {
+    /// <summary>
+    /// Represents one match in the tournamnet
+    /// </summary>
     public class MatchupModel
     {
         /// <summary>
-        /// Represents the matched teams 
+        /// The set of teams that were involved in this match
         /// </summary>
         public List<MatchupModel> Entries { get; set; } = new List<MatchupModel>();
+
+        /// <summary>
+        /// The winner of the match
+        /// </summary>
         public TeamModel Winner { get; set; }
+
+        /// <summary>
+        /// Which round this match is part of
+        /// </summary>
         public int MatchupRound { get; set; }
     }
 }

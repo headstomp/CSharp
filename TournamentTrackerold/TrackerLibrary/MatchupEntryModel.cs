@@ -6,10 +6,13 @@ using System.Threading.Tasks;
 
 namespace TrackerLibrary
 {
+    /// <summary>
+    /// Represents the team in the matchup
+    /// </summary>
     public class MatchupEntryModel
     {
         /// <summary>
-        /// Represents one team in the matchup
+        /// Represents one team in the matchup.
         /// </summary>
         public TeamModel TeamCompeting { get; set; }
 

@@ -113,13 +113,15 @@
    - Score (double)
    - ParentMatchup (Matchup)
    
+![schema](https://github.com/headstomp/CSharp/tree/master/TournamentTracker/images/db.PNG "Logo Title Text 1")
+   
 ## UI Design
 
 ![dashboard](https://github.com/headstomp/CSharp/tree/master/TournamentTracker/images/Dashboard.PNG)
 ![view tournament](https://github.com/headstomp/CSharp/tree/master/TournamentTracker/images/Tournamnet.PNG)
 ![create tournament](https://github.com/headstomp/CSharp/tree/master/TournamentTracker/images/CreateTournament.PNG)
 ![create team](https://github.com/headstomp/CSharp/tree/master/TournamentTracker/images/CreateTeam.PNG)
-![create prize](https://github.com/headstomp/CSharp/tree/master/TournamentTracker/images/CreatePrize.PNG)
+![create prize](https://github.com/headstomp/CSharp/tree/master/TournamentTracker/images/CreatePrize.PNG "Logo Title Text 1")
 
 ## Logic Planning
 

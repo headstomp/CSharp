@@ -1,5 +1,27 @@
 # Tournament Tracker
 
+## TODO
+
+- [x] Requirments
+- [x] Questions
+- [x] Big Picture Design
+- [x] CKey Concepts (learn em)
+- [x] Data Design
+- [x] UI Design
+- [x] Logic Planning
+
+- [x] Create Class libraries
+- [x] Build Forms
+- [ ] SQL db design
+- [ ] Wire up forms
+- [ ] SQL connection
+- [ ] Create Team Form
+- [ ] Create Tournament Form
+- [ ] Dashboard Form
+- [ ] Tourament Viewer
+- [ ] Error Handling
+- [ ] Emailing Users
+
 ## Requirments
 
 1. Track games played and their outcome (who won).<br>
@@ -132,24 +154,4 @@ tournamnet name gets updated
 - Emails, what triggers them
 - What triggers knowing whop plays the next matchup
 
-## TODO
 
-- [x] Requirments
-- [x] Questions
-- [x] Big Picture Design
-- [x] CKey Concepts (learn em)
-- [x] Data Design
-- [x] UI Design
-- [x] Logic Planning
-
-- [x] Create Class libraries
-- [x] Build Forms
-- [ ] SQL db design
-- [ ] Wire up forms
-- [ ] SQL connection
-- [ ] Create Team Form
-- [ ] Create Tournament Form
-- [ ] Dashboard Form
-- [ ] Tourament Viewer
-- [ ] Error Handling
-- [ ] Emailing Users

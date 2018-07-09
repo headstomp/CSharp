@@ -92,11 +92,11 @@
    - ParentMatchup (Matchup)
    
 ## UI Design
-![GitHub Logo](https://github.com/headstomp/CSharp/tree/master/TournamentTracker/images/Dashboard.PNG)
-![GitHub Logo](https://github.com/headstomp/CSharp/tree/master/TournamentTracker/images/Tournamnet.PNG)
-![GitHub Logo](https://github.com/headstomp/CSharp/tree/master/TournamentTracker/images/CreateTournament.PNG)
-![GitHub Logo](https://github.com/headstomp/CSharp/tree/master/TournamentTracker/images/CreateTeam.PNG)
-![GitHub Logo](https://github.com/headstomp/CSharp/tree/master/TournamentTracker/images/CreatePrize.PNG)
+![dashboard](https://github.com/headstomp/CSharp/tree/master/TournamentTracker/images/Dashboard.PNG)
+![view tournament](https://github.com/headstomp/CSharp/tree/master/TournamentTracker/images/Tournamnet.PNG)
+![create tournament](https://github.com/headstomp/CSharp/tree/master/TournamentTracker/images/CreateTournament.PNG)
+![create team](https://github.com/headstomp/CSharp/tree/master/TournamentTracker/images/CreateTeam.PNG)
+![create prize](https://github.com/headstomp/CSharp/tree/master/TournamentTracker/images/CreatePrize.PNG)
 
 ## Logic Planning
 

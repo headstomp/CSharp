@@ -1,5 +1,27 @@
 # Tournament Tracker
 
+## TODO
+
+- [x] Requirments
+- [x] Questions
+- [x] Big Picture Design
+- [x] CKey Concepts (learn em)
+- [x] Data Design
+- [x] UI Design
+- [x] Logic Planning
+
+- [x] Create Class libraries
+- [x] Build Forms
+- [ ] SQL db design
+- [ ] Wire up forms
+- [ ] SQL connection
+- [ ] Create Team Form
+- [ ] Create Tournament Form
+- [ ] Dashboard Form
+- [ ] Tourament Viewer
+- [ ] Error Handling
+- [ ] Emailing Users
+
 ## Requirments
 
 1. Track games played and their outcome (who won).<br>
@@ -92,11 +114,12 @@
    - ParentMatchup (Matchup)
    
 ## UI Design
-![GitHub Logo](https://github.com/headstomp/CSharp/tree/master/TournamentTracker/images/Dashboard.png)
-![GitHub Logo](https://github.com/headstomp/CSharp/tree/master/TournamentTracker/images/Tournamnet.png)
-![GitHub Logo](https://github.com/headstomp/CSharp/tree/master/TournamentTracker/images/CreateTournament.png)
-![GitHub Logo](https://github.com/headstomp/CSharp/tree/master/TournamentTracker/images/CreateTeam.png)
-![GitHub Logo](https://github.com/headstomp/CSharp/tree/master/TournamentTracker/images/CreatePrize.png)
+
+![dashboard](https://github.com/headstomp/CSharp/tree/master/TournamentTracker/images/Dashboard.PNG)
+![view tournament](https://github.com/headstomp/CSharp/tree/master/TournamentTracker/images/Tournamnet.PNG)
+![create tournament](https://github.com/headstomp/CSharp/tree/master/TournamentTracker/images/CreateTournament.PNG)
+![create team](https://github.com/headstomp/CSharp/tree/master/TournamentTracker/images/CreateTeam.PNG)
+![create prize](https://github.com/headstomp/CSharp/tree/master/TournamentTracker/images/CreatePrize.PNG)
 
 ## Logic Planning
 
@@ -131,4 +154,5 @@ tournamnet name gets updated
 - Data access, two different data sources
 - Emails, what triggers them
 - What triggers knowing whop plays the next matchup
+
 

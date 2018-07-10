@@ -14,8 +14,9 @@
 - [x] Build Forms
 - [X] SQL db design and create
 - [X] Data connection interface
-- [ ] Wire up forms
+- [O] Wire up forms
 - [X] SQL connection
+- [X] Text connection
 - [ ] Create Team Form
 - [ ] Create Tournament Form
 - [ ] Dashboard Form

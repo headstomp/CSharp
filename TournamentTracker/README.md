@@ -12,7 +12,8 @@
 
 - [x] Create Class libraries
 - [x] Build Forms
-- [ ] SQL db design
+- [X] SQL db design and create
+- [X] Data connection interface
 - [ ] Wire up forms
 - [ ] SQL connection
 - [ ] Create Team Form

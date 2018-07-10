@@ -39,13 +39,8 @@ namespace TrackerUI
                 prizePercentageValue.Text = "0";
 
             }
-            else
-            {
-                MessageBox.Show("This form has invalid information. PLease check and try again.");
-            }
         }
 
-        // TODO - add alerts for all field
         private bool ValidateForm()
         {
             bool output = true;
@@ -55,18 +50,21 @@ namespace TrackerUI
 
             if (!placeNumberValidNumber)
             {
+                placeNumberValidateLabel.Text = "not a valid number";
                 output = false;
-            }
+            }else { placeNumberValidateLabel.Text = ""; }
 
             if (placeNumber < 1)
             {
+                placeNumberValidateLabel.Text = "must be greater than 0";
                 output = false;
-            }
+            }else { placeNameValidateLabel.Text = ""; }
 
-            if(placeNameValue.Text.Length == 0)
+            if (placeNameValue.Text.Length == 0)
             {
+                placeNameValidateLabel.Text = "** required field"; 
                 output = false;
-            }
+            }else { placeNameValidateLabel.Text = ""; }
 
             decimal prizeAmount = 0;
             double prizePercentage = 0;
@@ -76,22 +74,32 @@ namespace TrackerUI
 
             if (prizeAmountValid == false || prizePercentValid == false)
             {
+                placeAmountValidateLabel.Text = "amount or percent required";
+                placePercentValidateLabel.Text = "amount or percent required";
                 output = false;
-            }
+            }else { placeAmountValidateLabel.Text = ""; placePercentValidateLabel.Text = ""; }
 
-            if (prizeAmount <=0 && prizePercentage <= 0)
+            if (prizeAmount <= 0 && prizePercentage <= 0)
             {
+                placeAmountValidateLabel.Text = "must be a positive number";
+                placePercentValidateLabel.Text = "must be a positive number";
                 output = false;
-            }
+            }else { placeAmountValidateLabel.Text = ""; placePercentValidateLabel.Text = ""; }
 
             if (prizePercentage < 0 || prizePercentage > 100)
             {
+                placePercentValidateLabel.Text = "must be between 1-100";
                 output = false;
-            }
+            }else { placePercentValidateLabel.Text = ""; }
 
 
 
             return output;
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -75,7 +75,8 @@
 ## Key Concepts
 
 - Email
-- SQL
+- SQL (Dapper)
+- Linq
 - Custom Events
 - Error Handling
 - Interfaces

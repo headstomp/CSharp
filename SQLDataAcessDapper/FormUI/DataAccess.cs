@@ -27,14 +27,15 @@ namespace FormUI
 
         public void InsertPerson(string firstName, string lastName, string emailAddress, string phoneNumber)
         {
+            // auto close connection
             using (IDbConnection connection = new System.Data.SqlClient.SqlConnection(Helper.CnnVal("DemoDB")))
             {
                 //Person newPerson = new Person { FirstName = firstName, LastName = lastName, EmailAddress = emailAddress, PhoneNumber = phoneNumber };
                 List<Person> people = new List<Person>();
-
                 people.Add(new Person { FirstName = firstName, LastName = lastName, EmailAddress = emailAddress, PhoneNumber = phoneNumber });
 
-                connection.Execute("dbo.People_Insert @FirstName, @lastName, @EmailAddress, @PhoneNumber", people);
+                //stored procedure
+                connection.Execute("dbo.People_Insert @FirstName, @LastName, @EmailAddress, @PhoneNumber", people);
 
             }
         }

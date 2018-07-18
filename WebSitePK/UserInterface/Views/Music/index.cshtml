@@ -1,0 +1,92 @@
+﻿@model IEnumerable<UserInterface.Models.MusicModel>
+
+@{
+    ViewBag.Title = "Music";
+}
+
+<style>
+    #sortable tr:hover {
+        background-color: #0094ff;
+        color: #fff;
+    }
+</style>
+
+<h2>Music</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Artist)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Year)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CoverArt)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Alblum)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Rank)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody id="sortable" style="cursor:pointer;">
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Artist)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Year)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CoverArt)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Alblum)
+                </td>
+                <td class="index">
+                    @Html.DisplayFor(modelItem => item.Rank)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.Id }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+                </td>
+            </tr>
+        }
+    </tbody>
+
+</table>
+
+
+@section scripts
+{
+    <script src="~/Scripts/jquery-ui-1.12.1.min.js"></script>
+    <script>
+    $("tbody").sortable({
+        placeholder: "bg-warning",
+        stop: function (event, tr) {
+            $("tr").each(function (index, element) {
+                var hiddenInput = $(element).children(".index").first();
+                hiddenInput.text(index);
+            });
+        }
+    })
+    </script>
+}

@@ -16,6 +16,9 @@ namespace UserInterface
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+            
+            //Initialize the database connections
+            GlobalConfig.InitializeConnections(DatabaseType.SQLServer);
         }
     }
 }

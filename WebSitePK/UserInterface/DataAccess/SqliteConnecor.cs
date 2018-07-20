@@ -13,10 +13,9 @@ namespace UserInterface.DataAccess
     public class SqliteConnector : IDataConnection
     {
 
-        // Code
         public static List<CodeModel> LoadProgram()
         {
-            using (IDbConnection cnn = new SQLiteConnection(GlobalConfig.CnnString("SQLite")))
+            using (IDbConnection cnn = new SQLiteConnection(GlobalConfig.CnnString(GlobalConfig.db)))
             {
                 var output = cnn.Query<CodeModel>("select * from Code", new DynamicParameters());
                 return output.ToList();
@@ -26,7 +25,7 @@ namespace UserInterface.DataAccess
  
         public CodeModel CreateProgram(CodeModel model)
         {
-            using (IDbConnection cnn = new SQLiteConnection(GlobalConfig.CnnString("SQLite")))
+            using (IDbConnection cnn = new SQLiteConnection(GlobalConfig.CnnString(GlobalConfig.db)))
             {
                 cnn.Execute("Insert into Code Name, Language, Github) values (@Name, @Language, @Github) ", model);
 

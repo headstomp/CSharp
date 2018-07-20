@@ -50,7 +50,7 @@ namespace UserInterface.DataAccess
 
         public MusicModel CreateSong(MusicModel model)
         {
-            using (IDbConnection cnn = new SQLiteConnection(GlobalConfig.CnnString("SQLite")))
+            using (IDbConnection cnn = new SQLiteConnection(GlobalConfig.CnnString(GlobalConfig.db)))
             {
                 cnn.Execute("Insert into Music Name, Artist, Year, Alblum, CoverArt, Rank) values (@Name, @Artist, @Year, @Alblum, @CoverArt, @ Rank) ", model);
 

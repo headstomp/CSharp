@@ -13,6 +13,11 @@ namespace UserInterface
     {
         public static IDataConnection Connection { get; private set; }
 
+        public const string db = "SQLite";
+
+        // to web form when saving (see tracker)
+        //GlobalConfig.Connection.CreatePerson(p);
+
         public static void InitializeConnections(DatabaseType db)
         {
 

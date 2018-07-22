@@ -36,6 +36,17 @@ namespace UserInterface.DataAccess
             }
         }
 
+        public CodeModel DeleteProgram(CodeModel model)
+        {
+            using (IDbConnection cnn = new SQLiteConnection(GlobalConfig.CnnString(GlobalConfig.db)))
+            {
+                cnn.Execute("Delete from Code Ehere Id = @Id ", model);
+
+                return model;
+
+            }
+        }
+
 
         // Music
         public static List<MusicModel> LoadSong()

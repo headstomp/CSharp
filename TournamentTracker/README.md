@@ -14,13 +14,13 @@
 - [x] Build Forms
 - [X] SQL db design and create
 - [X] Data connection interface
-- [O] Wire up forms
 - [X] SQL connection
 - [X] Text connection
-- [ ] Create Team Form
-- [ ] Create Tournament Form
-- [ ] Dashboard Form
-- [ ] Tourament Viewer
+- [X] Wire up Create Team Form
+- [X] Wire up Create Tournament Form
+- [ ] Scaffold out the actual tournament logic
+- [ ] Wire up Dashboard Form
+- [ ] Wire up Tourament Viewer
 - [ ] Error Handling
 - [ ] Emailing Users
 

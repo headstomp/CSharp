@@ -166,7 +166,6 @@
             this.placeNumberValidateLabel.Name = "placeNumberValidateLabel";
             this.placeNumberValidateLabel.Size = new System.Drawing.Size(200, 13);
             this.placeNumberValidateLabel.TabIndex = 24;
-            this.placeNumberValidateLabel.Click += new System.EventHandler(this.label1_Click);
             // 
             // placeNameValidateLabel
             // 

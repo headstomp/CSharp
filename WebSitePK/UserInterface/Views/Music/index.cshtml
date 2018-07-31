@@ -13,9 +13,32 @@
 
 <h2>Music</h2>
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addAongModal">
+    Add Song
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="addAongModal" tabindex="-1" role="dialog" aria-labelledby="addAongModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h5 class="modal-title" id="exampleModalLabel">Add New Song</h5>
+            </div>
+            <div class="modal-body">
+                ...
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 <table class="table table-bordered">
     <thead>
         <tr>
@@ -64,7 +87,7 @@
                     @Html.DisplayFor(modelItem => item.Rank)
                 </td>
                 <td>
-                    @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+                    @Html.ActionLink("Edit", "AddEdit", new { id = item.Id }) |
                     @Html.ActionLink("Details", "Details", new { id = item.Id }) |
                     @Html.ActionLink("Delete", "Delete", new { id = item.Id })
                 </td>
@@ -78,15 +101,16 @@
 @section scripts
 {
     <script src="~/Scripts/jquery-ui-1.12.1.min.js"></script>
+
     <script>
-    $("tbody").sortable({
-        placeholder: "bg-warning",
-        stop: function (event, tr) {
-            $("tr").each(function (index, element) {
-                var hiddenInput = $(element).children(".index").first();
-                hiddenInput.text(index);
-            });
-        }
-    })
+        $("tbody").sortable({
+            placeholder: "bg-warning",
+            stop: function (event, tr) {
+                $("tr").each(function (index, element) {
+                    var hiddenInput = $(element).children(".index").first();
+                    hiddenInput.text(index);
+                });
+            }
+        })
     </script>
 }

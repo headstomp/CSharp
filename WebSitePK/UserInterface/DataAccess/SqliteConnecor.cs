@@ -40,7 +40,7 @@ namespace UserInterface.DataAccess
         {
             using (IDbConnection cnn = new SQLiteConnection(GlobalConfig.CnnString(GlobalConfig.db)))
             {
-                cnn.Execute("Delete from Code Ehere Id = @Id ", model);
+                cnn.Execute("Delete from Code where Id = @Id ", model);
 
                 return model;
 
@@ -49,14 +49,25 @@ namespace UserInterface.DataAccess
 
 
         // Music
-        public static List<MusicModel> LoadSong()
+        public static List<MusicModel> LoadSongs()
         {
-            using (IDbConnection cnn = new SQLiteConnection(GlobalConfig.CnnString("SQLite")))
+            using (IDbConnection cnn = new SQLiteConnection(GlobalConfig.CnnString(GlobalConfig.db)))
             {
                 var output = cnn.Query<MusicModel>("select * from Music", new DynamicParameters());
                 return output.ToList();
             }
         }
+
+        public static List<MusicModel> LoadSongDetails( int id)
+        {
+            using (IDbConnection cnn = new SQLiteConnection(GlobalConfig.CnnString(GlobalConfig.db)))
+            {
+                var output = cnn.Query<MusicModel>("select * from Music where Id =" +id);
+
+                return output.ToList();
+            }
+        }
+
 
 
         public MusicModel CreateSong(MusicModel model)

@@ -1,41 +1,26 @@
 ﻿
 
-using System;
-
 namespace ConsoleUI
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Welcome to my application");
+            StandardMessages.WelcomeMessage();
 
-            //Ask for user information
-            Person user = new Person();
+            Person user = PersonDataCapture.Capture();
 
-            Console.Write("What is your first name: ");
-            user.FirstName = Console.ReadLine();
+            bool isUserValid = PersonValidator.Validate(user);
 
-            Console.Write("What is your last name: ");
-            user.LastName = Console.ReadLine();
-
-            // Checks to be sure the first and last names are valid
-            if (string.IsNullOrWhiteSpace(user.FirstName))
+            if (isUserValid == false)
             {
-                Console.WriteLine("You did not givee a valid first name");
-                Console.ReadLine();
-                return;
-            }
-            if (string.IsNullOrWhiteSpace(user.LastName))
-            {
-                Console.WriteLine("You did not givee a valid last name");
-                Console.ReadLine();
+                StandardMessages.EndApplication();
                 return;
             }
 
-            //Create a username for the person
-            Console.WriteLine($"Your username is { user.FirstName.Substring(0,1)}{ user.LastName }");
-            Console.ReadLine();
+            AccountGenerator.CreateAccount(user);
+
+            StandardMessages.EndApplication();
         }
     }
 }

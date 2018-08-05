@@ -7,7 +7,7 @@ using System.Text;
 
 namespace HelloService
 {
-    public class HelloService : IHelloService
+    public class HelloService : IHelloServiceChanged
     {
         public string GetMessage(string name)
         {

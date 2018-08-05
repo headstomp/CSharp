@@ -7,8 +7,8 @@ using System.Text;
 
 namespace HelloService
 {  
-    [ServiceContract]
-    public interface IHelloService
+    [ServiceContract(Name = "IHelloService")]
+    public interface IHelloServiceChanged
     {
         [OperationContract]
         string GetMessage(string name);
